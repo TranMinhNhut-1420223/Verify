@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        tools:context="f.minhnhut.projectlogin.SignUp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Sign Up"
+            android:textSize="25dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtinlayoutSignUpEmail"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:gravity="center">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/editSignUpEmail"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:layout_gravity="top"
+                    android:hint="E-mail"
+                    android:inputType="textEmailAddress"
+                    android:textSize="18dp" />
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtinlayoutSignUpPassword"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                app:counterOverflowTextAppearance="@style/CounterOverFlow">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/editSignUpPassword"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="top"
+                    android:gravity="center"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textSize="18dp"
+                    />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtinlayoutSignUpConfirmPassword"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                app:counterOverflowTextAppearance="@style/CounterOverFlow">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/editSignUpConfirmPassword"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="top"
+                    android:gravity="center"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:textSize="18dp"
+                    />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="Sign Up"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
